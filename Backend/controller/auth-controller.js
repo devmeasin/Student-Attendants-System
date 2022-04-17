@@ -45,7 +45,6 @@ class authController {
 
     // login process
 
-
     login = async (req, res) => {
 
         let { email, password } = req.body;
@@ -80,7 +79,6 @@ class authController {
         delete user._doc.password;
         console.log(user);
         res.status(200).json({ user });
-
 
     }
 
